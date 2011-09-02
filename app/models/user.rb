@@ -17,8 +17,8 @@ class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation
 
   has_many :microposts, :dependent => :destroy
-  has_many :phones
-  has_one :reference
+  belongs_to :phone
+  belongs_to :reference
   has_one :timezone
   # http://railstutorial.org/chapters/modeling-and-viewing-users-one#code:validates_format_of_email
   
@@ -98,30 +98,30 @@ class User < ActiveRecord::Base
     end
     
     def reference_is_refeered
-    	reference_is_refeered if is_refeered
+    	reference_is_refeered if reference
     end
     def reference_is_refeered=(is_refeered)
-    	self.is_refeered = Reference.find_or_create_by_is_refeered(is_refeered) unless is_refeered.blank?
+    	self.reference = Reference.find_or_create_by_is_refeered(is_refeered) unless is_refeered.blank?
     end
     
     def reference_first_name
-    	reference_first_name if first_name
+    	reference.first_name if reference
     end
     def reference_first_name=(first_name)
-    	self.first_name = Reference.find_or_create_by_first_name(first_name) unless first_name.blank?
+    	self.reference = Reference.find_or_create_by_first_name(first_name) unless first_name.blank?
     end
     
     def reference_last_name
-    	reference_last_name if last_name
+    	reference.last_name if reference
     end
     def reference_last_name=(last_name)
-    	self.last_name = Reference.find_or_create_by_last_name(last_name) unless last_name.blank?
+    	self.reference = Reference.find_or_create_by_last_name(last_name) unless last_name.blank?
     end
     
      def reference_phone_number
-    	reference_phone_number if phone_number
+    	reference.phone_number if reference
     end
     def reference_phone_number=(phone_number)
-    	self.phone_number = Reference.find_or_create_by_phone_number(phone_number) unless phone_number.blank?
+    	self.reference = Reference.find_or_create_by_phone_number(phone_number) unless phone_number.blank?
     end
 end

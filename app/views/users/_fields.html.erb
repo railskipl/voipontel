@@ -50,8 +50,8 @@
                     <p>Only add your personal Phones. You Can add aditional Caller to Your account when you have successfully created your account.</p>
                     <div id="phone">
                             <img src="images/registration/phone-num.png" alt="Phone Number" width="18" height="16"/>
-                            <span><%= f.label :phone_number, "Phone Number" %></span>
-                           <span><input type="text" size="30" name="user[phone_phone_number]" id="user_phone_phone_number" class="text" <% if params[:user] %>value="<%= @phone.phone_number %>" <% end %>></span>                           
+                            <span>Phone Number</span>
+                           <span><%= f.text_field :phone_phone_number %></span>                           
                             
                             <span>Phone Type:</span>
                             <label for="select2"></label>
@@ -71,19 +71,20 @@
                                     <h2>Referral</h2>
                                     <p>Have you been referred by anyone?</p>
                                      Yes
-                                      <input type="radio" name="user[reference_is_refeered]" id="user_is_refeered" class="radio" <% if params[:user] %>value="<%= @reference.is_refeered %>"<% end %>>
+                                      <%= f.radio_button  "reference_is_refeered", "Yes", :checked => "checked" %>
                                       No
-                                      <input type="radio" name="user[reference_is_refeered]" id="user_is_refeered" class="radio" <% if params[:user] %>value="<%= @reference.is_refeered %>"<% end %>>
+                                     <%= f.radio_button  "reference_is_refeered", "No", :checked => "checked" %>
                                       
             <div style="clear:both;"></div>
             						<p class="credt">* By naming the person who referred you, he or she will receive $5 credit from VOIPonTEL.</p>
-      <div id="referral-info">
-                                    <p><%= f.label :first_name, "First Name" %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                   <input type="text" name="user[reference_first_name]" id="reference_first_name" class="text"<% if params[:user] %>value="<% @reference.first_name%>"<% end %> />
-                                    <span><%= f.label :last_name, "Last Name" %></span>
-                                    <input type="text" name="user[reference_last_name]" id="reference_last_name" class="text"<% if params[:user] %>value="<% @reference.last_name%>"<% end %> />
-                                    <div style="clear:both;"><span><%= f.label :phone_number, "Phone Number" %></span>
-                                    <input type="text" name="user[reference_phone_number]" id="reference_phone_number" class="text"<% if params[:user] %>value="<% @reference.phone_number%>"<% end %> /></div>
+      		<div id="referral-info">
+                                    <p>First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                   		<%= f.text_field :reference_first_name %>
+                                    <span>Last Name</span>
+                                    <%= f.text_field :reference_last_name %>
+                                    
+                                    <span>Phone Number</span>
+                                    <%= f.text_field :reference_phone_number %>
                                     </div>
                                     
                  </div><!-- referral -->
