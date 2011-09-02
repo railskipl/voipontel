@@ -1,0 +1,12 @@
+/* CSS Document */
+
+#faq-list{ margin-bottom:30px;}
+	#faq-list ul{}
+		#faq-list ul li{ background:none; padding:4px 0 4px 22px; font-size:14px; font-weight:bold; color:#565656;}
+			#faq-list ul li a{ text-decoration:none; color:#565656; font-weight:bold;}
+			#faq-list ul li a:hover{ color:#016d9a; text-decoration:underline;}
+#faq-container{ margin:40px;}
+	.faq{ background:url(../images/pp-border-bottom.png) no-repeat left 27px; padding:10px 0 15px 0;}
+	.faq h3{color:#4c4c4c; padding-bottom:10px; font-weight:bold; font-size:14px; }
+	.faq h3 a{ color:#016d9a; margin:0 0 0 20px;}
+	.faq p{ font-weight:normal;}

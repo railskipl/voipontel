@@ -1,0 +1,15 @@
+
+#banner h1 img{ padding:35px 0 0 45px;}
+.pages h1{ background:url(../images/testimonial/heading-border.png) no-repeat left 22px; color:#4c4c4c; padding-bottom:10px;}
+p{ font-size:14px; color:#4c4c4c; line-height:20px;}
+
+#banner{ background:url(../images/about-us/pages-banner.png) no-repeat; height:113px;}
+
+#pages-middle{ background:#f2f2f2; overflow:hidden;}
+	.round-corners-pages{ 
+		-moz-border-radius:0 0 10px 10px;
+		-webkit-border-radius:0 0 10px 10px;
+		-khtml-border-radius:0 0 10px 10px;
+		border-radius:0 0 10px 10px;
+	}
+#slider{ display:none;}

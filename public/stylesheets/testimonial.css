@@ -1,0 +1,15 @@
+#testimonial{ padding:40px; overflow:hidden;}
+
+	.testi{ width:300px; clear:both;  margin:15px 60px 20px 70px; }
+		.testi-image{ float:left; margin-right:30px}
+			.testi-image img{ border:8px solid #949494;}
+		.testi p{ padding-bottom:9px;color:#4c4c4c; font-size:13px;}
+		.testi-text{}
+			.testi-text p img{ float:none !important}
+			.opening-commas{ margin:0 0 -13px -25px;}
+			.closing-commas{ margin:0 0 -8px 0;}
+			.name-clr{ color:#4c4c4c; font-weight:bold;}
+			.location-clr{ color:#a05812;}
+.left-testi{ float:left; width:450px;}
+.right-testi{ float:right; width:400px;}
+.pagination{ clear:both; float:right; margin:10px 20px;}

@@ -1,0 +1,9 @@
+/* CSS Document */
+#privacy-container{ padding:40px;}
+	.privacy-policy{ margin-bottom:23px;}
+		.privacy-policy h1{ background:url(../images/pp-border-bottom.png) no-repeat left 20px; margin-bottom:10px;}
+			.privacy-caling-card{ float:right; font-weight:normal; font-size:12px;}
+		.privacy-policy ul{ margin:20px 0 20px 0;}	
+			.privacy-policy ul li{ list-style:url(../images/about-us/bullet.png); padding:0 0 10px 0; margin:3px 0 0 27px; color:#5c5c5c; background:url(../images/li-border-bottom.png) no-repeat left 23px; }
+			.privacy-policy p{ margin-bottom:10px}
+.privacy-policy p a{ color:#316395; padding:0px; line-height:25px; font-size:14px; text-decoration:none; }

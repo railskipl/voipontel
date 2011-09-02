@@ -1,0 +1,63 @@
+/* CSS Document */
+
+
+	.round-corners-reg{ 
+		-moz-border-radius:10px;
+		-webkit-border-radius: 10px;
+		-khtml-border-radius:10px;
+		border-radius:10px;
+	}
+
+#registration-container{ padding:40px 15px; font-size:13px;}
+
+	#registration-container h1{ background:url(../images/pp-border-bottom.png) no-repeat left 20px; margin-bottom:10px;}
+	#registration-container input[type="text"] { background:url(../images/contact-us/text-field.png) no-repeat; border:0; margin:15px 0 0 25px; width: 351px; height: 31px; padding:4px 0 0 5px}
+	#registration-container input[type="password"] { background:url(../images/contact-us/text-field.png) no-repeat; border:0; margin:15px 0 0 25px; width: 351px; height: 31px; padding:4px 0 0 5px}
+	#select-container {background:url(../images/contact-us/text-field.png) no-repeat; width: 351px;height:50px;margin:15px 0 0 25px; padding:4px 0 4px 5px;}
+	
+	select{ border:0; width: 336px; margin:5px 0 0 2px; height:20px;}
+	/*option{ background:#FFF;}*/
+	#registration-container table tr td{ color:#464545; height:28px;}
+	
+	#register-phone{ width:475px; border:1px solid #666; margin:20px 0 0 10px; background:#e8e8e8; padding:20px;}
+		#registration-container h2{ color:#646565; margin-bottom:10px;}
+		#register-phone input[type="text"] { background:#e8e8e8 !important; width:85px; height:20px; margin:0 0 0 3px; border:1px solid #cacaca;}
+			#phone{ padding:20px 0 0 0;}
+				#phone img{ margin:0 0 -3px 0;}
+				#phone span{ font-size:13px; color:#1f1f1f; padding-left:3px;}
+				#phone select{background:#e8e8e8 !important; width:85px; height:20px; margin:0 0 0 3px; border:1px solid #cacaca; padding:0; }
+				.orng-clr a{ color:#dc6d01 !important; font-size:13px; text-decoration:none;}
+			#add-another-num{ padding:20px 0 0 0;}
+			#add-another-num img{margin:0 5px -3px 0;}
+			
+	#referral{ width:475px; border:1px solid #666; margin:20px 0 0 10px; background:#e8e8e8; padding:20px;}			
+		#referral p{ float:left;}
+		.credt{ font-size:12px; overflow:hidden;}
+		#referral-info{ clear:both; padding:10px;}
+		#referral-info input[type="text"] { background:#e8e8e8 !important; width:85px; height:20px; margin:0 0 0 3px; border:1px solid #cacaca; }
+		#referral p,span{font-size:13px; color:#1f1f1f; padding:5px; padding-bottom:10px}
+	#reg-btn{ clear:both;}		
+	#reg-btn img{ margin:20px 0 0 10px;}			
+
+
+	#left{ width:542px; float:left;}	
+	#right{ float:right; width:370px; border:1px solid #666666; margin-top:15px;}
+		#right input[type="text"] { background:url(../images/registration/text_box.png) no-repeat; width:250px; height:33px;}
+		#right h3{ background:url(../images/registration/bold_underline.png) no-repeat 15px bottom; color:#4c4c4c; font-size:18px; padding:15px;}
+	.note{ background:url(../images/registration/inner_text_bg.png) no-repeat; width:317px; height:53px; margin:10px 0 0 19px; padding:7px 5px; font-size:10px; color:#d32e24; text-align:center;}
+	
+	
+	/*------------------ Registration Button -------------------------- */
+			.btn_register{background: url("../images/registration/registration-btn.png") no-repeat scroll 0 0 transparent;
+						    border: medium none;
+						    color: #6B921E;
+						    font-size: 9pt;
+						    height: 37px;
+						    padding: 2px 0 3px 5px;
+						    text-align: left;
+						    width: 104px;
+						    float: none;
+						    margin:20px;
+						   }
+	
+		

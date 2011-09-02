@@ -1,0 +1,11 @@
+
+<%= stylesheet_link_tag 'common.css','registration.css' %>
+
+
+<%= form_for(@user) do |f| %>
+  <%= render 'fields', :f => f %>
+  	<%= render 'shared/error_messages', :object => f.object %>
+  <div class="actions">
+    
+  </div>
+<% end %>
